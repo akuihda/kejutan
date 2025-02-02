@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman dengan Tombol</title>
+    <style>
+        /* CSS untuk gaya halaman */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #gambar {
+            display: none; /* Sembunyikan gambar pada awal */
+            margin-top: 20px;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Jadi gini, gw ada kejutan buat kamu!</h2>
+        <button onclick="tampilkanGambar()">Coba pencet</button>
+        <div id="gambar-container">
+            <img id="gambar" src="ah, jari tengah.jpeg" alt="Gambar" />
+        </div>
+    </div>
+
+    <script>
+        // Fungsi untuk menampilkan gambar ketika tombol ditekan
+        function tampilkanGambar() {
+            var gambar = document.getElementById("gambar");
+            gambar.style.display = "block"; // Menampilkan gambar
+        }
+    </script>
+</body>
+</html>
